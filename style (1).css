@@ -1,0 +1,333 @@
+/*work on seo*/
+
+body, html{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: 0.25rem solid black;
+	 -webkit-text-size-adjust:none;
+    -moz-text-size-adjust:none;
+    -ms-text-size-adjust:none;
+    -webkit-text-size-adjust:100%;
+    -moz-text-size-adjust:100%;
+    -ms-text-size-adjust:100%;	
+}
+
+h3{
+	font-family: 'Fira Sans', sans-serif;
+}
+
+.container {
+  padding-right: 60px;
+  padding-left: 60px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.image{
+	width: 100%;
+	height: 30rem;
+}
+
+
+.codimg{
+	height: 25rem;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+	image-rendering: -moz-crisp-edges;       
+    image-rendering:   -o-crisp-edges;        
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; 
+}
+
+.paragraph{
+	
+	font-weight: 550;
+	font-family: 'Quando', serif;
+}
+
+.wp-caption {
+	position: relative;
+	height: 14rem;
+	float: left;
+}
+
+.wp-caption img {
+	width: 250px;;
+	height: 14rem;
+	image-rendering: -moz-crisp-edges;       
+    image-rendering:   -o-crisp-edges;        
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; 
+  	border: 1px black solid;
+}
+
+.wp-caption-text {
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	color: #fff;
+	left: 0;
+	bottom: 0;
+	padding: 0.75em 1em;
+	font-weight: 700;
+	z-index: 2;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: rgba(0,0,0,.7);
+	-webkit-transition: opacity .3s ease-in-out;
+	transition: opacity .3s ease-in-out;
+}
+
+.wp-caption:hover .wp-caption-text {
+	opacity: 1;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.about_para{
+	font-family: 'Fira Sans', sans-serif;
+	
+}
+
+#back2Top {
+    width: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    z-index: 999;
+    cursor: pointer;
+    transform: rotate(270deg);
+    position: fixed;
+	margin-right: 0.6rem;
+    bottom: 150px;
+    right: 0;
+    background-color: #DDD;
+    color: #555;
+    text-align: center;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#back2Top:hover {
+    background-color: #DDF;
+    color: #000;
+}
+
+form{
+	margin: 0 auto;
+	width: 50%;
+}
+
+
+
+input, textarea{
+	width: 100%;
+	padding: 0.4rem;
+	margin-top: 10px;
+	font-size: 0.9em;
+}
+
+label{
+	color: black;
+	font-weight: bold;
+	font-size: 1rem;
+	text-align: center;
+}
+
+input:focus, textarea:focus {
+    border:1px solid #97d6eb;
+}
+
+textarea{
+	height: 10rem;
+}
+
+#submit{
+	border: none;
+}
+
+#submit:hover {
+	opacity:.9;
+}
+
+.container2{
+	background-image: url("images/background.jpeg"); 
+	width: 60%;
+	margin: 0 auto;	
+}
+
+.space{
+	width: 90%;
+}
+
+.vh-120{
+	height: 120vh;
+}
+
+.footer_para{
+	font-size: 0.95em;
+}
+
+
+
+@media (max-width: 575.98px) { 
+	
+	p{ 
+	font-size: 1em;
+	}
+	
+	h2{
+		font-size: 2em;
+	}
+	
+	h3{
+		font-size: 1.2em;
+	}
+	
+	ul{
+		font-size: 1em;
+	}
+	
+	.wp-caption{
+		width: 150px;
+	}
+	
+	.container-ns {
+	padding-right: 10px;
+    padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	}
+	
+	input::placeholder {
+		text-overflow: ellipsis;
+		font-size: 0.7em;
+	}
+
+	
+ }
+
+
+@media (min-width: 576px) and (max-width: 767.98px) { 	
+  
+	p{ 
+	font-size: 1.3em;
+	}
+	
+	h2{
+		font-size: 2.3em;
+	}
+	
+	h3{
+		font-size: 1.5em;
+	}
+	
+	ul{
+		font-size: 1.3em;
+	}
+	
+	.container-ns {
+	padding-right: 100px;
+    padding-left: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	}
+	
+	
+
+	
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .ph4-l {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    p{ 
+	font-size: 1.4em;
+	}
+	
+	h2{
+		font-size: 2.4em;
+	}
+	
+	h3{
+		font-size: 1.6em;
+	}
+	
+	ul{
+		font-size: 1.4em;
+	}
+	
+	.container-ns {
+	padding-right: 10px;
+    padding-left: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	}
+		
+}
+
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	p{ 
+	font-size: 1.5em;
+	}
+	
+	h2{
+		font-size: 2.5em;
+	}
+	
+	h3{
+		font-size: 1.7em;
+	}
+	
+	ul{
+		font-size: 1.5em;
+	}
+  
+  .container2{
+    width: 45%;
+  }
+ }
+
+
+@media (min-width: 1200px) { 
+	p{ 
+	font-size: 1.5em;
+	}
+	
+	h2{
+		font-size: 2.5em;
+	}
+	
+	h3{
+		font-size: 1.7em;
+	}
+	
+	ul{
+		font-size: 1.5em;
+	}
+  
+   .container2{
+    width: 45%;
+  }
+ }
+
+
+
+/** {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+}*/
