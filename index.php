@@ -3,8 +3,8 @@
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$message = $_POST['message'];
-		$from = 'From: yetunde@yetundesolaadebayo.com';
-		$to = 'ysolaadebayo@gmail.com'; 
+		$from = 'From: mydomain.com';
+		$to = 'myemail'; 
 		$subject = $_POST['subject'];
 		
 		 $body = "From: $name\n E-Mail: $email\n Message:\n $message";
@@ -14,19 +14,19 @@
             
               echo "<script>alert('The email field is required');</script>";
             
-			}
+	      }
             
             if (!$_POST["name"]) {
             
               echo "<script>alert('The name field is required');</script>";
             
-			}
+	   }
         
-        if (!$_POST["message"]) {
+           if (!$_POST["message"]) {
             
             echo "The content field is required.";
             
-        }
+           }
         else{
 			if (mail ($to, $subject, $body, $from)) { 
 				 echo "<script>alert('Email sent successfully');</script>";
@@ -34,9 +34,9 @@
 				echo "<script>alert('The email could not be sent');</script>";
 			}
 		}
-	}
+	   }
       
-		?> 
+?> 
 
 <!DOCTYPE html>
 <html>
