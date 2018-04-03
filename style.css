@@ -1,11 +1,11 @@
 /*work on seo*/
 
 body, html{
-	margin: 0;
-	padding: 0;
-	width: 100%;
-	border: 0.25rem solid black;
-	 -webkit-text-size-adjust:none;
+     margin: 0;
+     padding: 0;
+     width: 100%;
+     border: 0.25rem solid black;
+    -webkit-text-size-adjust:none;
     -moz-text-size-adjust:none;
     -ms-text-size-adjust:none;
     -webkit-text-size-adjust:100%;
@@ -14,7 +14,7 @@ body, html{
 }
 
 h3{
-	font-family: 'Fira Sans', sans-serif;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 .container {
@@ -31,12 +31,12 @@ h3{
 
 
 .codimg{
-	height: 25rem;
-	display: block;
+    height: 25rem;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-	image-rendering: -moz-crisp-edges;       
+    image-rendering: -moz-crisp-edges;       
     image-rendering:   -o-crisp-edges;        
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
@@ -56,14 +56,14 @@ h3{
 }
 
 .wp-caption img {
-	width: 250px;;
-	height: 14rem;
-	image-rendering: -moz-crisp-edges;       
+    width: 250px;;
+    height: 14rem;
+    image-rendering: -moz-crisp-edges;       
     image-rendering:   -o-crisp-edges;        
     image-rendering: -webkit-optimize-contrast;
     image-rendering: crisp-edges;
     -ms-interpolation-mode: nearest-neighbor; 
-  	border: 1px black solid;
+    border: 1px black solid;
 }
 
 .wp-caption-text {
@@ -94,7 +94,7 @@ h3{
 }
 
 .about_para{
-	font-family: 'Fira Sans', sans-serif;
+   font-family: 'Fira Sans', sans-serif;
 	
 }
 
@@ -106,7 +106,7 @@ h3{
     cursor: pointer;
     transform: rotate(270deg);
     position: fixed;
-	margin-right: 0.6rem;
+    margin-right: 0.6rem;
     bottom: 150px;
     right: 0;
     background-color: #DDD;
@@ -202,7 +202,7 @@ textarea{
 	
 	.container-ns {
 	padding-right: 10px;
-    padding-left: 10px;
+        padding-left: 10px;
 	margin-right: auto;
 	margin-left: auto;
 	}
@@ -236,14 +236,10 @@ textarea{
 	
 	.container-ns {
 	padding-right: 100px;
-    padding-left: 100px;
+        padding-left: 100px;
 	margin-right: auto;
 	margin-left: auto;
-	}
-	
-	
-
-	
+	}	
 }
 
 
@@ -271,7 +267,7 @@ textarea{
 	
 	.container-ns {
 	padding-right: 10px;
-    padding-left: 10px;
+        padding-left: 10px;
 	margin-right: auto;
 	margin-left: auto;
 	}
