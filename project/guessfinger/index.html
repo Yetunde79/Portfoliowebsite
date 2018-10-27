@@ -1,0 +1,84 @@
+<html>
+	<head>
+	<link type="text/css"  rel ="stylesheet" href="style.css"/>
+	<title>Guess</title>
+	</head>
+	
+	<body>
+		<h2>Guess how many fingers I am holding up! </h2>
+		<input type="text" id="number" placeholder="Number between 0 and 10">
+		<p><button type="submit" id="check"> Guess! </button></p>
+		
+		<div id="foo">
+		
+		</div>
+		
+		<div id="foo2">
+		
+		</div>
+		
+		
+		<script type="text/javascript">
+		
+
+		var randomnumber = Math.floor(Math.random() * 10);
+		var tries = 5;
+			
+		var img = new Image();
+		var div = document.getElementById('foo');
+ 
+		img.onload = function() {
+			div.appendChild(img);
+		};
+		
+		var img2 = new Image();
+		var div2 = document.getElementById('foo');
+ 
+		img2.onload = function() {
+			div2.appendChild(img2);
+		};
+ 
+
+ 
+			  document.getElementById("check").onclick = function() {
+				var guessnumber = document.getElementById("number").value;
+				tries = tries - 1;
+				
+				if(tries > 0 || guessnumber == randomnumber) {
+					if(guessnumber == randomnumber) 
+					{
+						alert("Good job, " + randomnumber + " is correct");
+						img2.src = 'right.jpg';
+						setTimeout(function () { location.reload(1); }, 5000)
+					}
+					else if(guessnumber > randomnumber)
+					{
+						alert("You guessed wrong, the number is lower. You have " + tries + " tries left");	
+						img.src = 'wrong.png';
+					}
+					else if(guessnumber < randomnumber)
+					{
+						alert("You guessed wrong, the number is higher. You have " + tries + " tries left");
+						img.src = 'wrong.png';
+					}
+				
+					if(isNaN(guessnumber)) {
+						alert("You did not type a number");
+						location.reload(true);
+					}
+			 }
+			 
+			 else{
+				alert("You ran out of tries. The correct answer was " +  randomnumber);
+				location.reload(true);
+			}
+		}
+		
+			
+		</script>
+	
+	</body>
+
+</html>
+
+
