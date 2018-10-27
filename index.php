@@ -3,8 +3,8 @@
 		$name = $_POST['name'];
 		$email = $_POST['email'];
 		$message = $_POST['message'];
-		$from = 'From: mydomain.com';
-		$to = 'myemail'; 
+		$from = 'From: yetunde@yetundesolaadebayo.com';
+		$to = 'ysolaadebayo@gmail.com'; 
 		$subject = $_POST['subject'];
 		
 		 $body = "From: $name\n E-Mail: $email\n Message:\n $message";
@@ -14,19 +14,19 @@
             
               echo "<script>alert('The email field is required');</script>";
             
-	      }
+			}
             
             if (!$_POST["name"]) {
             
               echo "<script>alert('The name field is required');</script>";
             
-	   }
+			}
         
-           if (!$_POST["message"]) {
+        if (!$_POST["message"]) {
             
             echo "The content field is required.";
             
-           }
+        }
         else{
 			if (mail ($to, $subject, $body, $from)) { 
 				 echo "<script>alert('Email sent successfully');</script>";
@@ -34,20 +34,60 @@
 				echo "<script>alert('The email could not be sent');</script>";
 			}
 		}
-	   }
+	}
       
-?> 
+		?>
 
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style.css">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
-<link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121421317-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-121421317-1');
+    </script>
+  
+  <!-- Hotjar Tracking Code for https://yetundesolaadebayo.com/ -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:945072,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="keywords" content="HTML, CSS, HTML, PHP, Portfolio, Web developer, Resume, Job, Yetunde Sola-Adebayo">
+	<meta property="og:title" content="Yetunde Sola-Adebayo">
+    <meta name="author" content="Yetunde Sola-Adebayo">
+    <meta property="og:locale" content="en_US">
+    <meta name="description" content="Front-end Developer seeking job opportunities">
+    <meta property="og:description" content="Front-end Developer">
+    <link rel="canonical" href="https://yetundesolaadebayo.com/">
+    <meta property="og:url" content="https://yetundesolaadebayo.com/">
+    <meta property="og:site_name" content="Yetunde Sola-Adebayo">
+	<meta property="og:image" content="https://yetundesolaadebayo.com/resources/img/me.jpg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="">
+    <meta name="twitter:creator" content="@yetunde_sola">
+    <meta name="twitter:title" content="Yetunde Sola-Adebayo">
+    <meta name="twitter:description" content="Front-end Developer. I design and code beautifully websites, and I love what I do.">
+	<!-- <meta name="twitter:image" content="https://yetundesolaadebayo.com/resources/img/me.jpg">
+    <meta name="twitter:image:alt" content="Yetunde Sola-Adebayo"> -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://unpkg.com/tachyons@4.7.0/css/tachyons.min.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quando" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  	<link rel="shortcut icon" type="image/png" href="images/YSA.png"/>
  
 <title>Home</title>
 </head>
@@ -57,7 +97,7 @@
 
 <nav class="db dt-l w-100 border-box pa3 ph5-l">
   <a class="db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="#" title="Home">
-    <img src="images/logo.PNG" class="dib w2 h2 br-100" alt="Site Name">
+    <img src="images/YSA.png" class="dib w2 h2 br-100" alt="Site Name">
   </a>
   
   <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
@@ -65,6 +105,7 @@
     <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="index.php#project" title="Project">Project</a>
     <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="index.php#about" title="About">About</a>
     <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="resume.pdf" target="_blank" title="Resume">Resume</a>
+    <a class="link dim dark-gray f6 f5-l dib mr3 mr4-l" href="https://medium.com/@ysolaadebayo" target="_blank" title="Blog">Blog</a>
     <a class="link dim dark-gray f6 f5-l dib" href="index.php#contact" title="Contact">Contact</a>
   </div>
 
@@ -95,7 +136,7 @@
 
 <div class="home center vh-30 dt w-75" id="home">
   <div class="dtc v-mid tc black ph3 ph4-l">
-    <p class="paragraph">Hello! My name is Yetunde. I am a front end developer based in Houston, TX. I am currently looking for employment opportunities.<a class="link dark-blue" href="index.php#contact">Contact me</a> if interested</p>
+    <p class="paragraph">Hello! My name is Yetunde. I am a web developer based in Houston, TX. I am currently looking for employment opportunities. You can <a class="link dark-blue" href="index.php#contact">contact me</a> here</p>
 
     </div>
 	
@@ -103,34 +144,46 @@
   
 
 <div class="image">
-	<img class="codimg" src="images/laptop.jpeg">
+	<img class="codimg" src="https://s3.us-east-2.amazonaws.com/picturelaptop/coverimg.png">
 </div>
 
    
    <div class="container container-ns" id="project">
-	<h2 class= "tc">PROJECTS</h2>
-		<div class="container">	
+	<h2 class="tc">PROJECTS</h2>
+		<div class="container">
+          
+		<figure class="wp-caption">
+			<a href="https://code-blog.herokuapp.com/" target="_blank"><img src="https://image.thum.io/get/https://code-blog.herokuapp.com/" alt="Food Blog" >
+			<figcaption class="wp-caption-text">This food blog was created with Node.js, Express.js, ejs, MongoDB/Mongoose and passport.js so I can login to create posts.</figcaption></a>
+		</figure>
+          
+		<figure class="wp-caption">
+			<a href="https://www.shootbeta.com/" target="_blank"><img src="https://image.thum.io/get/http://www.shootbeta.com/" alt="Shoot website" >
+			<figcaption class="wp-caption-text">Made with my colleagues at Shoot Technologies. It was created with HTML, CSS and JavaScript.</figcaption></a>
+		</figure>
+
+        <figure class="wp-caption">
+			<a href="https://yetundesolaadebayo.com/project/movieapp" target="_blank"><img src="https://image.thum.io/get/http://yetundesolaadebayo.com/project/movieapp" alt="movie search app" >
+			<figcaption class="wp-caption-text">A movie search app created with NodeJS, ExpressJS, CSS and the OMDb API.</figcaption></a>
+		</figure>
+          
 			<figure class="wp-caption">
-				<a href="https://yetundesolaadebayo.com/project/twitter_api/"><img src="http://image.thum.io/get/https://yetundesolaadebayo.com/project/twitter_api/" alt="twitter api">
-				<figcaption class="wp-caption-text">A twitter clients that retrieves the most popular tweets from any username. Created with Twitter API, HTML, CSS and PHP</figcaption></a>
+				<a href="https://yetundesolaadebayo.com/project/twitter_api/" target="_blank"><img src="https://image.thum.io/get/http://yetundesolaadebayo.com/project/twitter_api/" alt="twitter api" >
+				<figcaption class="wp-caption-text">A twitter clients that retrieves the most popular tweets from any username. Created with Twitter API, HTML, CSS and PHP.</figcaption></a>
 			</figure>
 		
 		
 		<figure class="wp-caption">
-		<a href="https://yetundesolaadebayo.com/project/weatherchecker/"><img src="http://image.thum.io/get/https://yetundesolaadebayo.com/project/weatherchecker/" alt="weather checker" >
+		<a href="https://yetundesolaadebayo.com/project/weatherchecker/" target="_blank"><img src="https://image.thum.io/get/https://yetundesolaadebayo.com/project/weatherchecker/" alt="weather checker"  >
 			<figcaption class="wp-caption-text ">A website that checks the weather in any city. Created with OpenWeatherMap API, HTML, CSS and PHP</figcaption></a>
 		</figure>
 		
 		<figure class="wp-caption">
-				<a href="https://yetundesolaadebayo.com/project/guessfinger/"><img src="http://image.thum.io/get/https://yetundesolaadebayo.com/project/guessfinger/" alt="guess finger">
+				<a href="https://yetundesolaadebayo.com/project/guessfinger/" target="_blank"><img src="https://image.thum.io/get/https://yetundesolaadebayo.com/project/guessfinger/"  alt="guess finger">
 			<figcaption class="wp-caption-text">A JavaScript game that lets you guess how many fingers I am holding. Created with HTML, CSS and JavaScript</figcaption></a>
 		</figure>
 		
-		<figure class="wp-caption">
-			<a href="https://yetundesolaadebayo.com/project/bbccloning/"><img src="http://image.thum.io/get/https://yetundesolaadebayo.com/project/bbccloning/" alt="bbc cloning">
-			<figcaption class="wp-caption-text">A clone of the BBC website. Created with HTML and CSS</figcaption></a>
-		</figure>
-		
+	
 		
 	</div>
 	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
@@ -143,7 +196,7 @@
 	<h2 class="tc">ABOUT</h2>
 	<div class="center w-60">
 		<h3>About me</h3>
-		<p class="about_para">My name is Yetunde Sola-Adebayo and I am a senior in college studying computer science. I like front-end development because I enjoy transforming code to art and making the web more interactive and exciting. My hobbies are cooking and reading</p>
+		<p class="about_para">My name is Yetunde Sola-Adebayo and I am a senior in college studying computer science. I like front-end development because I enjoy transforming code to art and making the web more interactive and exciting. My hobbies are <a class="link dark-blue" href="https://www.instagram.com/yettifood/">cooking </a> and reading</p>
 		<h3>About the website</h3>
 		<p class="about_para">I built this website using HTML, CSS, PHP and tachyon, a CSS framework</p>
 		<h3>About my skills</h3>
@@ -152,7 +205,8 @@
 			<li>HTML</li>
 			<li>CSS</li>
 			<li>JavaScript</li>
-			<li>Java</li>
+			<li>Bootstrap</li>
+			<li>PHP</li>
 		</ul> 
 	</div>
 </div>
